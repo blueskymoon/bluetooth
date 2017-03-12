@@ -1,0 +1,9 @@
+    调试
+1.在虚拟机下安装蓝牙驱动。
+2.在windows中c:\windows\system32\drivers中找BCMxxxx.hex文件，然后复制到linux下。
+3.使用hex2hcd 将BCMxxx.hex文件转换为BCMxxxx.hcd.
+4.使用命令 sudo cp BCMxxx.hex /lib/firmware/brcm
+5.bluetooth start 
+如果蓝牙适配器不能打开使用命令后即可
+bluetooth off  /  bluetooth on
+
